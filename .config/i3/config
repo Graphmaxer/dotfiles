@@ -4,6 +4,7 @@ exec --no-startup-id light-locker &
 exec_always --no-startup-id feh --bg-fill --randomize ~/Pictures/Wallpaper
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
 exec --no-startup-id nm-applet &
+for_window [class="WARFRAME"] fullscreen enable
 
 # Design tweaks
 gaps inner 10
@@ -127,6 +128,8 @@ bindsym $mod+Shift+egrave move container to workspace 7
 bindsym $mod+Shift+underscore move container to workspace 8
 bindsym $mod+Shift+ccedilla move container to workspace 9
 bindsym $mod+Shift+agrave move container to workspace 10
+
+bindsym $mod+m move workspace to output left
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
